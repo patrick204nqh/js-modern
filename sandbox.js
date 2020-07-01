@@ -1,22 +1,22 @@
-// template strings
-const title = 'Best reads of 2020';
-const author = 'Patrick';
-const likes = 30;
+let dev = ['patrick', 'kevin', 'robert', 'karl'];
 
-// concatenation way
-// let result =
-//   'The blog called ' + title + ' by ' + author + ' has ' + likes + ' likes';
-// console.log(result);
+// dev[1] = 'de bruyne';
+// console.log(dev[1]);
 
-// template string way
-let result = `The blog called ${title} by ${author} has ${likes} likes`;
+// let ages = [20, 25, 30, 35];
+// console.log(ages[2]);
+
+// let random = ['patrick', 'robert', 30, 20];
+// console.log(random);
+
+// console.log(dev.length);
+
+// array methods
+
+// let result = dev.join('-');
+// let result = dev.indexOf('robert');
+// let result = dev.concat(['ken', 'hayate']);
+let result = dev.push('ken');
+result = dev.pop();
+
 console.log(result);
-
-// creating html templates
-let html = `
-  <h2>${title}</h2>
-  <p>By ${author}</p>
-  <span>This blog has ${likes} likes</span>
-`;
-
-console.log(html);
