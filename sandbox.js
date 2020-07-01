@@ -1,4 +1,7 @@
-alert('hello, world');
+// strings
+console.log('hello, world');
+let email = 'patrick204nqh@gmail.com';
+console.log(email);
 
 // string concatenation
 let firstName = 'Karl';
@@ -17,3 +20,6 @@ console.log(fullName.length);
 console.log(fullName.toUpperCase());
 let result = fullName.toLowerCase();
 console.log(result);
+
+let index = email.indexOf('@');
+console.log(index);
