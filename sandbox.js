@@ -1,15 +1,8 @@
-// while loops
+// do while loops
 
-const names = ['patrick', 'robert', 'karl'];
-// let i = 0;
+let i = 3;
 
-// while (i < 5) {
-//   console.log('in loop: ', i);
-//   i++;
-// }
-
-let i = 0;
-while (i < names.length) {
-  console.log(names[i]);
+do {
+  console.log('val of i is: ', i);
   i++;
-}
+} while (i < 5);
