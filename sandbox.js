@@ -1,13 +1,20 @@
-const name = 'patrick';
+// callbacks & foreach
 
-// functions
+// const myFunc = (callbackFunc) => {
+//   // do something
+//   let value = 50;
+//   callbackFunc(value);
+// };
 
-const greet = () => 'hello';
+// myFunc((value) => {
+//   // do something
+//   console.log(value);
+// });
 
-let resultOne = greet();
-console.log(resultOne);
+let people = ['patrick', 'robert', 'kevin', 'karl'];
 
-// methods
+const logPerson = (person, index) => {
+  console.log(`${index} - hello ${person}`);
+};
 
-let resultTwo = name.toUpperCase();
-console.log(resultTwo);
+people.forEach(logPerson);
