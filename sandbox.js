@@ -1,17 +1,8 @@
-great();
-great();
-great();
+// arguments & parameters
 
-speak();
-speak();
-speak();
-
-// function declaration
-function great() {
-  console.log('hello there');
-}
-
-// function expression
-const speak = function () {
-  console.log('good day!');
+const speak = function (name = 'patrick', time = 'night') {
+  console.log(`good ${time} ${name}`);
 };
+
+speak('robert', 'morning');
+speak();
