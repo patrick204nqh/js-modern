@@ -6,18 +6,16 @@ let user = {
   email: 'patrick@dev.co.uk',
   location: 'bao loc',
   blogs: ['why mac & cheese rules', '10 things to make with marmite'],
+  login: function () {
+    console.log('the user logged in');
+  },
+  logout: function () {
+    console.log('the user logged out');
+  },
 };
 
-console.log(user);
-console.log(user.name);
+user.login();
+user.logout();
 
-// user.age = 35;
-console.log(user.age);
-
-const key = 'location';
-
-console.log(user[key]);
-user['name'] = 'robert';
-console.log(user['name']);
-
-console.log(typeof user);
+const name = 'robert';
+name.toUpperCase();
