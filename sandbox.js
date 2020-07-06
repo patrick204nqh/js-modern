@@ -1,18 +1,11 @@
-// primitive values
+// const para = document.querySelector('div.error');
 
-// let scoreOne = 50;
-// let scoreTwo = scoreOne;
-// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+// console.log(para);
 
-// scoreOne = 100;
-// console.log(`scoreOne: ${scoreOne}`, `scoreTwo: ${scoreTwo}`);
+const paras = document.querySelectorAll('p');
+const errors = document.querySelectorAll('.error');
+// paras.forEach((para) => {
+//   console.log(para);
+// });
 
-// reference values
-
-const userOne = { name: 'patrick', age: 20 };
-const userTwo = userOne;
-
-console.log(userOne, userTwo);
-
-userOne.age = 40;
-console.log(userOne, userTwo);
+console.log(errors);
