@@ -7,7 +7,16 @@
 
 const paras = document.querySelectorAll('p');
 
-console.log(paras[0].innerText);
-console.log(paras[0].textContent);
+paras.forEach((p) => {
+  if (p.textContent.includes('error')) {
+    p.classList.add('error');
+  }
+  if (p.textContent.includes('success')) {
+    p.classList.add('success');
+  }
+});
 
-paras.forEach((p) => {});
+const title = document.querySelector('.title');
+
+title.classList.toggle('test');
+title.classList.toggle('test');
